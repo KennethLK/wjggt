@@ -1,6 +1,6 @@
 'use strict';
 
-var wx = require('./WXBizDataCrypt');
+var WXBizDataCrypt = require('./WXBizDataCrypt');
 
 var appId = 'wx4f4bc4dec97d474b'
 var sessionKey = 'tiihtNczf5v6AKRyjwEUhQ=='
