@@ -2,8 +2,8 @@
 
 var WXBizDataCrypt = require('./WXBizDataCrypt');
 
-var appId = 'wx4f4bc4dec97d474b'
-var sessionKey = 'tiihtNczf5v6AKRyjwEUhQ=='
+var appId = 'wx4f4bc4dec97d474b';
+var sessionKey = 'tiihtNczf5v6AKRyjwEUhQ==';
 var encryptedData = 
 	'CiyLU1Aw2KjvrjMdj8YKliAjtP4gsMZM'+
 	'QmRzooG2xrDcvSnxIMXFufNstNGTyaGS'+
@@ -21,14 +21,14 @@ var encryptedData =
 	'lqYTopNHR1Vf7XjfhQlVsAJdNiKdYmYV'+
 	'oKlaRv85IfVunYzO0IKXsyl7JCUjCpoG'+
 	'20f0a04COwfneQAGGwd5oa+T8yO5hzuy'+
-	'Db/XcxxmK01EpqOyuxINew=='
-var iv = 'r7BXXKkLb8qrSNn05n0qiA=='
+	'Db/XcxxmK01EpqOyuxINew==';
+var iv = 'r7BXXKkLb8qrSNn05n0qiA==';
 
-var pc = new WXBizDataCrypt(appId, sessionKey)
+var pc = new WXBizDataCrypt(appId, sessionKey);
 
-var data = pc.decryptData(encryptedData , iv)
+var data = pc.decryptData(encryptedData , iv);
 
-console.log('解密后 data: ', data)
+console.log('解密后 data: ', data);
 
 var router = require('express').Router();
 var AV = require('leanengine');
